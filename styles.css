@@ -5,11 +5,45 @@
 }
 
 body {
-    background: #22283b;
+    background: linear-gradient(85deg, #22283b 65%, #B9B9B9 35%);
     color: #fff;
     font-family: Inter, sans-serif;
     line-height: 1.6;
+    position: relative;
+    overflow-x: hidden;
 }
+
+.stripes {
+    background-image: linear-gradient(90deg, #22283b00 33.33%, #2b3450 33.33%, #2b3450 50%, #22283b00 50%, #22283b00 83.33%, #2b3450 83.33%, #2b3450 100%);
+    background-size: 240.00px 240.00px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    z-index: -1;
+}
+
+.stripes-shadow {
+    background-image: linear-gradient(
+        90deg,
+        #22283b00 30%,   /* transparent stripe */
+        #1f2432 30%,     /* solid stripe */
+        #1f2432 50%,
+        #22283b00 50%,   /* transparent stripe */
+        #22283b00 80%,
+        #1f2432 80%,     /* solid stripe */
+        #1f2432 100%
+    );
+    background-size: 240.00px 240.00px;
+    position: absolute;
+    top: 0;
+    left: -0.5px;
+    width: 30%;
+    height: 100%;
+    z-index: -2;
+}
+
 
 .site-header {
     max-width: 1280px;
@@ -41,9 +75,10 @@ body {
     margin: 80px auto;
     padding: 0 32px;
     display: grid;
-    grid-template-columns: 55% 45%;
-    gap: 24px;
+    grid-template-columns: 45% 55%;
+    gap: 16px;
     align-items: stretch;
+    margin-top: 60px;
 }
 
 .hero-text h2 {
