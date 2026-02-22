@@ -3,61 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name</title>
     <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Dela Gothic One' rel='stylesheet'>
+    <title>Your Name</title>
 </head>
 <body>
-    <header class = "navBar">
-        <h1>Your Name</h1>
-        <div class="navContainer">
+    <header class = "site-header">
+        <h1 class = "logo">Your Name</h1>
+        <nav class = "nav">
             <a href = "landing.html">Home</a>
             <a href = "resume.html">Resume</a>
             <a href = "contact.html">Contact</a>
-        </div>
+        </nav>
     </header>
-    <section class = "hero">
-        <section class="heroLeft">
-            <div class="textContainer">
-                <h1>Your Name</h1>
-                <h2>Actor/ Performer/ Vocalist</h2>
+    <main>
+        <section class = "hero">
+            <div class = "hero-text">
+                <h2>Your Name</h2>
+                <h3>Actor/ Performer/ Vocalist</h3>
                 <p>
-                    A simple biography about you. Blah blah blah. This is where you can talk about your background, your experience, and your passion for acting. You can also mention any notable roles or projects you've been a part of, as well as any awards or recognition you've received. This is your chance to make a strong first impression and let people know why you're a great choice for their next project.
+                    A simple biography about you. Could be something you've done, what you are working on, your passion for musical theatre, etc.
                 </p>
-                <div class = "readMore">
-                    <a href = "resume.html">Read More -></a>
+                <a class = "cta" href = "resume.html"> See Resume -></a>
+            </div>
+
+            <div class = "hero-image">
+                <img src = "assets/placeholderImage.jpg" alt = "Headshot Picture">
+            </div>
+
+            <section class = "projects">
+                <h2 class = "section-title">Recent Projects</h2>
+
+                <div class = "project-grid">
+                    <div class = "card">
+                        <img src = "assets/placeholderImage.jpg" alt = "">
+                        <h3>Project Title</h3>
+                        <p>Project Description</p>
+                    </div>
+                    
+                    <div class = "card">
+                        <img src = "assets/placeholderImage.jpg" alt = "">
+                        <h3>Project Title</h3>
+                        <p>Project Description</p>
+                    </div>
+
+                    <div class = "card">
+                        <img src = "assets/placeholderImage.jpg" alt = "">
+                        <h3>Project Title</h3>
+                        <p>Project Description</p>
+                    </div>
                 </div>
-            </div>
+            </section>
         </section>
-
-        <section class="heroRight">
-            <div class="imageContainer">
-                <img src="assets/placeholderImage.jpg" alt="Headshot of Your Name">
-            </div>
-        </section>
-    </section>
-    
-    <section class = "recentProjects">
-        <div class = "projectGrid">
-            <article class="project-card">
-                <div class="project-thumb"></div>
-                <h3>Project Title</h3>
-                <p>Project Description</p>
-            </article>
-
-            <article class="projectCard">
-                <div class="projectThumb"></div>
-                <h3>Project Title</h3>
-                <p>Project Description</p>
-            </article>
-
-            <article class="projectCard">
-                <div class="projectThumb"></div>
-                <h3>Project Title</h3>
-                <p>Project Description</p>
-            </article>
-        </div>
-    </section>
-    <script src="script.js"></script>
+    </main>
 </body>
 </html>
