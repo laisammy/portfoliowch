@@ -7,7 +7,6 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
@@ -34,44 +33,51 @@ export default function Gallery() {
 
     return (
         <ScrollFadeIn>
-            <div className="pattern-background flex items-center justify-center w-full">
+            <div className="pattern-background flex items-center justify-center w-full min-h-screen px-4 py-10">
                 <div className="bg-background w-full max-w-4xl mx-auto p-6">
-                    <h1 className="text-4xl font-light tracking-[0.2em] p-5 mb-5">
+
+                    <h1 className="text-[clamp(2rem,4vw,3rem)] font-light tracking-[0.2em] p-5 mb-5 text-center">
                         Gallery
                     </h1>
-                    <ColumnsPhotoAlbum photos={photos} columns={3} onClick={({ index }) => setIndex(index)} />
+
+                    <ColumnsPhotoAlbum
+                        photos={photos}
+                        columns={(containerWidth) => {
+                            if (containerWidth < 500) return 1;
+                            if (containerWidth < 900) return 2;
+                            return 3;
+                        }}
+                        onClick={({ index }) => setIndex(index)}
+                    />
+
                     <Lightbox
                         slides={photos}
                         open={index >= 0}
                         index={index}
                         close={() => setIndex(-1)}
-
                         plugins={[Fullscreen, Thumbnails, Zoom]}
                     />
-                    <div id = "Navigation" className="mt-8 flex flex-row gap-3 items-center justify-center">
-                        <Link to="/" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
+
+                    <div id="Navigation" className="mt-7 flex flex-wrap gap-3 text-[clamp(0.9rem,1.4vw,1.2rem)]">
+                        <Link to="/" className="outline-1 outline-text/75 p-2 tracking-widest hover:bg-hover">
                             HOME
                         </Link>
-                        <Link to="/about" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
+                        <Link to="/about" className="outline-1 outline-text/75 p-2 tracking-widest hover:bg-hover">
                             ABOUT
                         </Link>
-                        <Link to="/gallery" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
+                        <Link to="/gallery" className="outline-1 outline-text/75 p-2 tracking-widest hover:bg-hover">
                             GALLERY
                         </Link>
-                        <Link to="/resume" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
+                        <Link to="/resume" className="outline-1 outline-text/75 p-2 tracking-widest hover:bg-hover">
                             RESUME
                         </Link>
-                        <Link to="/contact" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
+                        <Link to="/contact" className="outline-1 outline-text/75 p-2 tracking-widest hover:bg-hover">
                             CONTACT
                         </Link>
                     </div>
+
                 </div>
             </div>
         </ScrollFadeIn>
     );
 }
-
-
-
-
-
