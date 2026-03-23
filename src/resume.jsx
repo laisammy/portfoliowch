@@ -12,7 +12,7 @@ export default function Resume() {
                     </h1>
 
                     <h1 className="text-[clamp(1.8rem,3vw,2.5rem)] font-medium tracking-[0.07em] p-2 text-center">
-                        Theatre Experience
+                        Amateur Credits
                     </h1>
 
                     <div className="p-3 space-y-4">
