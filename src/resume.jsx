@@ -72,6 +72,29 @@ export default function Resume() {
                     </div>
 
                     <h1 className="text-4xl font-medium tracking-[0.07em] p-2 mt-5">
+                        Languages
+                    </h1>
+
+                    <div className="p-3 space-y-2">
+                        <section className="grid grid-cols-2 gap-25">
+                            <p>English</p>
+                            <p>Fluent</p>
+                        </section>
+                        <section className="grid grid-cols-2 gap-25">
+                            <p>Cantonese</p>
+                            <p>Fluent</p>
+                        </section>
+                        <section className="grid grid-cols-2 gap-25">
+                            <p>Mandarin</p>
+                            <p>Fluent</p>
+                        </section>
+                        <section className="grid grid-cols-2 gap-25">
+                            <p>Japanese</p>
+                            <p>Beginner</p>
+                        </section>
+                    </div>
+
+                    <h1 className="text-4xl font-medium tracking-[0.07em] p-2 mt-5">
                         Work Experience
                     </h1>
                     <div className="p-3">
