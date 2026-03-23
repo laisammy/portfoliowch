@@ -12,7 +12,7 @@ export default function Resume() {
                     </h1>
 
                     <h1 className="text-[clamp(1.8rem,3vw,2.5rem)] font-medium tracking-[0.07em] p-2 text-center">
-                        Credits
+                        Theatre Experience
                     </h1>
 
                     <div className="p-3 space-y-4">
@@ -139,7 +139,7 @@ export default function Resume() {
                                 BA (Hons) Musical Theatre
                             </h2>
                             <h3 className="text-[clamp(1rem,1.6vw,1.2rem)] font-light p-2">
-                                Royal Welsh College of Music and Drama (Expected 2029)
+                                Royal Welsh College of Music and Drama (Expected 2028)
                             </h3>
                         </section>
 
