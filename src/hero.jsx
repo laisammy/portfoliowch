@@ -9,8 +9,8 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 export default function Hero() {
     return(
         <ScrollFadeIn>
-            <div className="pattern-background min-h-screen flex items-center justify-center ">
-                <div className="flex flex-col md:flex-row w-full max-w-6xl items-stretch lg:scale-75">
+            <div className="pattern-background min-h-screen flex items-center justify-center max-h-1">
+                <div className="flex flex-col md:flex-row w-full max-w-6xl scale-60">
                     <div className="bg-background text-text lexend flex flex-col justify-center p-9 w-full">
                         <h1 className="text-[clamp(2.5rem,5vw,4.5rem)] font-semibold tracking-[0.07em]">
                         JACOB WONG
