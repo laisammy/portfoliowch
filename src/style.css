@@ -7,7 +7,22 @@
   --color-primary: #fff8f0;
   --color-secondary: #e9dec3;
   --color-accent: #4d6f52;
+  --color-hover: #bd9371;
 }
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+.animate-fadein {
+  animation: fadein 0.5s ease-out forwards;
+}
+
 
 .lexend {
   font-family: "Lexend", sans-serif;
