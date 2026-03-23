@@ -16,11 +16,11 @@ export default function Hero() {
                         JACOB WONG
                         </h1>
 
-                        <p className="font-normal mt-2 tracking-wider text-[clamp(1.3rem,2.5vw,2rem)]">
+                        <p className="font-normal mt-2 tracking-wider text-[clamp(1.3rem,2.5vw,1.7rem)]">
                         Actor / Musician
                         </p>
 
-                        <p className="mt-6 font-light max-w-md text-[clamp(1rem,1.8vw,1.3rem)]">
+                        <p className="mt-6 font-light max-w-md text-[clamp(1rem,1.8vw,1.4rem)]">
                         A musical theatre performer from Hong Kong, he has originated roles in both professional and amateur productions and has taught at numerous institutions across the city. 
                         He is now excited to continue his artistic and professional development overseas at RWCMD.
                         </p>
