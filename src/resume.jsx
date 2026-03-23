@@ -206,25 +206,25 @@ export default function Resume() {
 
                     <div className="mt-5">
                         <button>
-                            <a href="public/JACOBWONG_CV.pdf" download className="outline-solid outline-1 outline-text/75 p-2 font-normal tracking-widest">Download Resume (.PDF)</a>
+                            <a href="public/JACOBWONG_CV.pdf" download className="outline-solid outline-1 outline-text/75 p-2 font-normal tracking-widest hover:bg-hover">Download Resume (.PDF)</a>
                         </button>
                     </div>
 
 
                     <div id = "Navigation" className="mt-8 flex flex-row gap-3">
-                        <Link to="/" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest">
+                        <Link to="/" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
                             HOME
                         </Link>
-                        <Link to="/about" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest">
+                        <Link to="/about" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
                             ABOUT
                         </Link>
-                        <Link to="/gallery" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest">
+                        <Link to="/gallery" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
                             GALLERY
                         </Link>
-                        <Link to="/resume" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest">
+                        <Link to="/resume" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
                             RESUME
                         </Link>
-                        <Link to="/contact" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest">
+                        <Link to="/contact" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
                             CONTACT
                         </Link>
                     </div>
