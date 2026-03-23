@@ -66,11 +66,6 @@ export default function Resume() {
                             <p>Mandarin</p>
                             <p>Fluent</p>
                         </section>
-
-                        <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center sm:text-left">
-                            <p>Japanese</p>
-                            <p>Beginner</p>
-                        </section>
                     </div>
 
                     <h1 className="text-[clamp(1.8rem,3vw,2.5rem)] font-medium tracking-[0.07em] p-2 mt-5 text-center">
