@@ -34,7 +34,7 @@ export default function Gallery() {
     return (
         <ScrollFadeIn>
             <div className="pattern-background flex items-center justify-center w-full min-h-screen px-4 py-10">
-                <div className="bg-background w-full max-w-4xl mx-auto p-6 flex flex-col items-center justify-center">
+                <div className="bg-background w-full max-w-4xl mx-auto p-6">
 
                     <h1 className="text-[clamp(2rem,4vw,3rem)] font-light tracking-[0.2em] p-5 mb-5 text-center">
                         Gallery
@@ -58,7 +58,7 @@ export default function Gallery() {
                         plugins={[Fullscreen, Thumbnails, Zoom]}
                     />
 
-                    <div id="Navigation" className="mt-7 flex flex-wrap gap-3 text-[clamp(0.9rem,1.4vw,1.2rem)]">
+                    <div id="Navigation" className="mt-7 flex flex-wrap gap-3 text-[clamp(0.9rem,1.4vw,1.2rem)] justify-center">
                         <Link to="/" className="outline-1 outline-text/75 p-2 tracking-widest hover:bg-hover">
                             HOME
                         </Link>
