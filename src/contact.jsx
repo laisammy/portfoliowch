@@ -8,7 +8,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 export default function Contact() {
     return(
         <ScrollFadeIn>
-            <div className="pattern-background flex flex-row items-center justify-center">
+            <div className="pattern-background flex flex-row items-center justify-center h-full">
                 <div className="bg-background text-text lexend p-8 h-max w-190 flex flex-col items-center justify-center">
                     <h1 className="text-4xl font-light tracking-[0.2em] p-5">
                         Contact

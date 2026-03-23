@@ -150,7 +150,38 @@ export default function Resume() {
                         </section>
                     </div>
 
-                    <div>
+                    <h1 className="text-4xl font-medium tracking-[0.07em] p-2 mt-5">
+                        Certifications
+                    </h1>
+
+                    <div className="p-3">
+                        <section className="flex flex-col items-center justify-center">
+                            <h2 className="text-3xl font-normal tracking-[0.07em] p-2">
+                                Singing for Musical Theater
+                            </h2>
+                            <h3 className="text-16 font-light tracking-[0.07em] p-2">
+                                ABRSM (Issued Nov 2024)
+                            </h3>
+                        </section>
+                        <section className="flex flex-col items-center justify-center">
+                            <h2 className="text-3xl font-normal tracking-[0.07em] p-2">
+                                Violin Performance Grade 8
+                            </h2>
+                            <h3 className="text-16 font-light tracking-[0.07em] p-2">
+                                ABRSM (Issued Jan 2024)
+                            </h3>
+                        </section>
+                        <section className="flex flex-col items-center justify-center">
+                            <h2 className="text-3xl font-normal tracking-[0.07em] p-2">
+                                Singing Performance Grade 8
+                            </h2>
+                            <h3 className="text-16 font-light tracking-[0.07em] p-2">
+                                ABRSM (Issued May 2024)
+                            </h3>
+                        </section>
+                    </div>
+
+                    <div className="mt-5">
                         <button>
                             <a href="public/JACOBWONG_CV.pdf" download className="outline-solid outline-1 outline-text/75 p-2 font-normal tracking-widest">Download Resume (.PDF)</a>
                         </button>
