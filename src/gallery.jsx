@@ -46,7 +46,7 @@ export default function Gallery() {
                         index={index}
                         close={() => setIndex(-1)}
 
-                        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
+                        plugins={[Fullscreen, Thumbnails, Zoom]}
                     />
                     <div id = "Navigation" className="mt-8 flex flex-row gap-3 items-center justify-center">
                         <Link to="/" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
