@@ -13,7 +13,7 @@ This was part of the initial mockup:
 Since I was just starting to take web dev seriously (I only had a semesters worth of web dev classes in uni and I barely paid attention) when I designed this mockup, I realised I was a bit too ambitious with the layout and scrapped it.
 After a few weeks of learning web dev seriously just for the sake of Resolution and Sleepover, I gathered my courage to finish this project with a brand new minimalist design, but its mostly because I wanted to make a website for my pooks anyways :3
 
-I almost crashed out doing
+I almost crashed out doing the responsive design part bro I actually cannot please don't make me do that again
 
 Special thanks to my man for allowing me to use him as a guinea pig!
 
