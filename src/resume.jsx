@@ -11,7 +11,7 @@ export default function Resume() {
                         RESUME
                     </h1>
                     <h1 className="text-4xl font-medium tracking-[0.07em] p-2">
-                        Theater Experience
+                        Credits
                     </h1>
                     <div className="p-3 space-y-2">
                         <section className="grid grid-cols-3 gap-10">

@@ -1,5 +1,16 @@
+import { useState } from "react";
+
 import { ColumnsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/columns.css";
+
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 import { Link } from "react-router-dom";
 
@@ -19,36 +30,48 @@ const photos = [
 ];
 
 export default function Gallery() {
-  return (
-    <ScrollFadeIn>
-        <div className="pattern-background flex items-center justify-center w-full">
-            <div className="bg-background w-full max-w-4xl mx-auto p-6">
-                <h1 className="text-4xl font-light tracking-[0.2em] p-5 mb-5">
-                    Gallery
-                </h1>
-                <ColumnsPhotoAlbum photos={photos} columns={3} />
-                <div id = "Navigation" className="mt-8 flex flex-row gap-3 items-center justify-center">
-                    <Link to="/" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
-                        HOME
-                    </Link>
-                    <Link to="/about" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
-                        ABOUT
-                    </Link>
-                    <Link to="/gallery" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
-                        GALLERY
-                    </Link>
-                    <Link to="/resume" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
-                        RESUME
-                    </Link>
-                    <Link to="/contact" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
-                        CONTACT
-                    </Link>
+    const [index, setIndex] = useState(-1);
+
+    return (
+        <ScrollFadeIn>
+            <div className="pattern-background flex items-center justify-center w-full">
+                <div className="bg-background w-full max-w-4xl mx-auto p-6">
+                    <h1 className="text-4xl font-light tracking-[0.2em] p-5 mb-5">
+                        Gallery
+                    </h1>
+                    <ColumnsPhotoAlbum photos={photos} columns={3} onClick={({ index }) => setIndex(index)} />
+                    <Lightbox
+                        slides={photos}
+                        open={index >= 0}
+                        index={index}
+                        close={() => setIndex(-1)}
+
+                        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
+                    />
+                    <div id = "Navigation" className="mt-8 flex flex-row gap-3 items-center justify-center">
+                        <Link to="/" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
+                            HOME
+                        </Link>
+                        <Link to="/about" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
+                            ABOUT
+                        </Link>
+                        <Link to="/gallery" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
+                            GALLERY
+                        </Link>
+                        <Link to="/resume" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
+                            RESUME
+                        </Link>
+                        <Link to="/contact" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest hover:bg-hover">
+                            CONTACT
+                        </Link>
+                    </div>
                 </div>
             </div>
-        </div>
-    </ScrollFadeIn>
-  );
+        </ScrollFadeIn>
+    );
 }
+
+
 
 
 
