@@ -3,15 +3,27 @@ import { Link } from "react-router-dom";
 export default function About() {
     return (
         <div className="bg-stone-300 flex flex-row items-center justify-center h-screen">
-            <div className="bg-background text-text p-8 h-100 w-190 flex flex-col items-center justify-center">
-                <h1 className="text-5xl font-bold tracking-[0.07em] flex justify-center mb-5">ABOUT JACOB WONG</h1>
-                <p>
-                    A musical theatre performer from Hong Kong, he has originated roles in both professional and amateur productions and has taught at numerous institutions across the city. 
-                    He is now excited to continue his artistic and professional development overseas at RWCMD.
+            <div className="bg-background text-text lexend p-8 h-max w-190 flex flex-col items-center justify-center">
+                <h1 className="text-5xl font-semibold tracking-[0.07em] flex justify-center mb-5">ABOUT JACOB WONG</h1>
+                <p className="font-light text-center">
+                    A dedicated musical theatre performer from Hong Kong, he has spent over a decade training and performing with Face Productions, progressing from ensemble work in junior shows to leading and featured roles across major productions. 
+                    His credits include Dewey Finn in School of Rock, Shrek in Shrek Jr, Rooster in Annie Jr, Ram Sweeney in Heathers and Jake Dillinger in Be More Chill. 
                 </p>
-                <div id = "Navigation" className="mt-40 flex flex-row gap-3">
+                <p className="font-light text-center mt-3">
+                    Beyond performing, he has taught extensively at institutions across Hong Kong, working with students of all ages in singing, music, and theatre, and has contributed to creative teams as an assistant director and music technician. 
+                    With a strong foundation in performance, musicianship, and education, he is now excited to continue his artistic and professional development overseas at the Royal Welsh College of Music & Drama.
+                </p>
+                <div className="flex flex-row items-center justify-center mt-6 gap-3">
+                    <img src="public/IMG_4430.jpeg" className="w-1/3" ></img>
+                    <img src="public/IMG_4432.jpeg" className="w-1/3"></img>
+                    <img src="public/IMG_4431.jpeg" className="w-1/3"></img>
+                </div>
+                <div id = "Navigation" className="mt-7 flex flex-row gap-3">
                     <Link to="/" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest">
                         HOME
+                    </Link>
+                    <Link to="/about" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest">
+                        ABOUT
                     </Link>
                     <Link to="/gallery" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest">
                         GALLERY
@@ -19,8 +31,12 @@ export default function About() {
                     <Link to="/resume" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest">
                         RESUME
                     </Link>
+                    <Link to="/contact" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest">
+                        CONTACT
+                    </Link>
                 </div>
             </div>
         </div>
     )
 }
+

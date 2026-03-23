@@ -28,14 +28,23 @@ export default function Gallery() {
                 <Link to="/" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest">
                     HOME
                 </Link>
-                <Link to="/About" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest">
+                <Link to="/about" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest">
                     ABOUT
                 </Link>
-                <Link to="/Gallery" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest">
+                <Link to="/gallery" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest">
                     GALLERY
+                </Link>
+                <Link to="/resume" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest">
+                    RESUME
+                </Link>
+                <Link to="/contact" className="outline-solid outline-1 outline-text/75 p-2 font-sans tracking-widest">
+                    CONTACT
                 </Link>
             </div>
         </div>
     </div>
   );
 }
+
+
+
