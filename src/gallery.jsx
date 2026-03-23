@@ -34,10 +34,10 @@ export default function Gallery() {
     return (
         <ScrollFadeIn>
             <div className="pattern-background flex items-center justify-center w-full min-h-screen px-4 py-10">
-                <div className="bg-background w-full max-w-4xl mx-auto p-6">
+                <div className="bg-background text-text lexend w-full max-w-4xl mx-auto p-6">
 
-                    <h1 className="text-[clamp(2rem,4vw,3rem)] font-light tracking-[0.2em] p-5 mb-5 text-center">
-                        Gallery
+                    <h1 className="text-[clamp(2rem,4vw,3.5rem)] font-semibold tracking-[0.07em] flex justify-center mb-5 text-center">
+                        GALLERY
                     </h1>
 
                     <ColumnsPhotoAlbum

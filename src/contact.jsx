@@ -10,8 +10,8 @@ export default function Contact() {
             <div className="pattern-background flex items-center justify-center min-h-screen px-4 py-10">
                 <div className="bg-background text-text lexend p-8 w-full max-w-4xl flex flex-col items-center justify-center">
 
-                    <h1 className="text-[clamp(2rem,4vw,3rem)] font-light tracking-[0.2em] p-5 text-center">
-                        Contact
+                    <h1 className="text-[clamp(2rem,4vw,3.5rem)] font-semibold tracking-[0.07em] flex justify-center mb-5 text-center">
+                        CONTACT
                     </h1>
 
                     <div className="flex flex-col sm:flex-row gap-6 items-center justify-center mb-6 text-[clamp(1rem,1.6vw,1.3rem)]">
