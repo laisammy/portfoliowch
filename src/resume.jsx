@@ -5,7 +5,7 @@ import ScrollFadeIn from "./scrollFadeIn";
 export default function Resume() {
     return (
         <ScrollFadeIn>
-            <div className="bg-stone-300 flex flex-row items-center justify-center w-full">
+            <div className="pattern-background flex flex-row items-center justify-center w-full">
                 <div className="bg-background text-text lexend p-8 h-max w-190 flex flex-col items-center justify-center">
                     <h1 className="text-4xl font-light tracking-[0.2em] p-5 mb-5">
                         RESUME

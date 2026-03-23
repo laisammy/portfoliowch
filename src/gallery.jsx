@@ -21,7 +21,7 @@ const photos = [
 export default function Gallery() {
   return (
     <ScrollFadeIn>
-        <div className="bg-stone-300 flex items-center justify-center w-full">
+        <div className="pattern-background flex items-center justify-center w-full">
             <div className="bg-background w-full max-w-4xl mx-auto p-6">
                 <h1 className="text-4xl font-light tracking-[0.2em] p-5 mb-5">
                     Gallery

@@ -8,6 +8,7 @@
   --color-secondary: #e9dec3;
   --color-accent: #4d6f52;
   --color-hover: #bd9371;
+  --color-textHover: #525252;
 }
 
 @keyframes fadein {
@@ -27,4 +28,24 @@
 .lexend {
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
+}
+
+.pattern-background {
+  --s: 103px;
+  --c1: #dbdbdb;
+  --c2: #e6e6e6;
+  
+  --g: var(--c1)    3.125%,var(--c2) 0 9.375%,
+       var(--c1) 0 15.625%,var(--c2) 0 21.875%,
+       var(--c1) 0 28.125%,#0000 0;
+  background: 
+    linear-gradient(225deg,#0000    3.125%,var(--c2) 0 9.375%,
+                           #0000 0 78.125%,var(--c2) 0 84.375%,#0000 0) 
+     0 calc(var(--s)/2),
+    linear-gradient( 45deg,var(--g)) 0 var(--s),
+    linear-gradient( 45deg,var(--g)) calc(var(--s)/-2) calc(var(--s)/-2),
+    linear-gradient(225deg,var(--g)) var(--s) 0,
+    linear-gradient(225deg,var(--g)) calc(var(--s)/2) var(--s),
+    repeating-linear-gradient(-45deg,var(--c1) -3.125% 3.125%,var(--c2) 0 9.375%);
+  background-size: calc(2*var(--s)) calc(2*var(--s));
 }

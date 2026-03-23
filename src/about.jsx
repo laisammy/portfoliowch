@@ -5,7 +5,7 @@ import ScrollFadeIn from "./scrollFadeIn"
 export default function About() {
     return (
         <ScrollFadeIn>
-            <div className="bg-stone-300 flex flex-row items-center justify-center h-screen">
+            <div className="pattern-background flex flex-row items-center justify-center h-screen">
                 <div className="bg-background text-text lexend p-8 h-max w-190 flex flex-col items-center justify-center">
                     <h1 className="text-5xl font-semibold tracking-[0.07em] flex justify-center mb-5">ABOUT JACOB WONG</h1>
                     <p className="font-light text-center">
