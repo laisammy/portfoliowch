@@ -15,7 +15,7 @@ export default function Resume() {
                         Credits
                     </h1>
 
-                    <div className="p-3 space-y-4 w-full">
+                    <div className="p-3 space-y-4">
                         <section className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center sm:text-left">
                             <p className="font-medium">Be More Chill</p>
                             <p>Jake Dillinger</p>
@@ -51,7 +51,7 @@ export default function Resume() {
                         Languages
                     </h1>
 
-                    <div className="p-3 space-y-3 w-full">
+                    <div className="p-3 space-y-3">
                         <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center sm:text-left">
                             <p>English</p>
                             <p>Fluent</p>
