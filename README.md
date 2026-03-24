@@ -1,4 +1,4 @@
-# Personal Website
+# Portfolio (Made for someone else)
 This is a personal website built with React and Tailwind CSS. It includes pages displaying personal info (About), photos (Gallery), resume (Resume), contact info (Contact) and a simple landing page (Home). This project was created as a digital portfolio for an Actor-Musician (my pookie :3)
 
 # Hardships, difficulties, problems blah blah blah
