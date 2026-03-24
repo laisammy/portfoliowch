@@ -73,11 +73,11 @@ export default function Contact() {
                             </div>
 
                             <div className="flex flex-col items-center">
-                                <button
+                                <label
                                     className="bg-background outline-1 outline-text/75 p-2 font-normal tracking-widest mt-5 hover:bg-hover text-[clamp(0.9rem,1.4vw,1.2rem)]"
                                 >
                                     Submit
-                                </button>
+                                </label>
                             </div>
 
                         </form>
