@@ -11,6 +11,16 @@ export default function Resume() {
                         RESUME
                     </h1>
 
+                    <div className="mb-5">
+                        <a
+                            href="public/JACOBWONG_CV.pdf"
+                            download
+                            className="outline-1 outline-text/75 p-2 font-normal tracking-widest hover:bg-hover text-[clamp(0.9rem,1.4vw,1.2rem)]"
+                        >
+                            Download Resume (.PDF)
+                        </a>
+                    </div>
+
                     <h1 className="text-[clamp(1.8rem,3vw,2.5rem)] font-medium tracking-[0.07em] p-2 text-center">
                         Amateur Credits
                     </h1>
@@ -184,16 +194,6 @@ export default function Resume() {
                                 ABRSM (Issued May 2024)
                             </h3>
                         </section>
-                    </div>
-
-                    <div className="mt-5">
-                        <a
-                            href="public/JACOBWONG_CV.pdf"
-                            download
-                            className="outline-1 outline-text/75 p-2 font-normal tracking-widest hover:bg-hover text-[clamp(0.9rem,1.4vw,1.2rem)]"
-                        >
-                            Download Resume (.PDF)
-                        </a>
                     </div>
 
                     <div id="Navigation" className="mt-7 flex flex-wrap gap-3 text-[clamp(0.9rem,1.4vw,1.2rem)]">
