@@ -11,7 +11,7 @@ export default function Resume() {
                         RESUME
                     </h1>
 
-                    <div className="mb-5">
+                    {/* <div className="mb-5">
                         <a
                             href="public/JACOBWONG_CV.pdf"
                             download
@@ -19,40 +19,50 @@ export default function Resume() {
                         >
                             Download Resume (.PDF)
                         </a>
+                    </div> */}
+
+                    <h1 className="text-[clamp(1.8rem,3vw,2.5rem)] font-medium tracking-[0.07em] p-2 text-center">
+                        Professional Credits
+                    </h1>
+
+                    <div className="p-3 space-y-4">
+                        <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center sm:text-left">
+                            <p className="font-medium">Christmas Parade Puppeteer</p>
+                            <p>Hong Kong International Airport</p>
+                        </section>
+
+                        <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center sm:text-left">
+                            <p className="font-medium">Touring Chorus Member</p>
+                            <p>HKBUAS</p>
+                        </section>
                     </div>
 
                     <h1 className="text-[clamp(1.8rem,3vw,2.5rem)] font-medium tracking-[0.07em] p-2 text-center">
-                        Amateur Credits
+                        Training Credits
                     </h1>
 
                     <div className="p-3 space-y-4">
                         <section className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center sm:text-left">
+                            <p className="font-medium">Gen Last</p>
+                            <p>Lead</p>
+                            <p>HKYAF</p>
+                        </section>
+
+                        <section className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center sm:text-left">
                             <p className="font-medium">Be More Chill</p>
-                            <p>Jake Dillinger</p>
+                            <p>Supporting</p>
                             <p>Face Productions</p>
                         </section>
 
                         <section className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center sm:text-left">
                             <p className="font-medium">Heathers: The Musical</p>
-                            <p>Ram Sweeney</p>
-                            <p>Face Productions</p>
-                        </section>
-
-                        <section className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center sm:text-left">
-                            <p className="font-medium">Annie Jr.</p>
-                            <p>Rooster</p>
+                            <p>Supporting</p>
                             <p>Face Productions</p>
                         </section>
 
                         <section className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center sm:text-left">
                             <p className="font-medium">Shrek Jr.</p>
-                            <p>Shrek</p>
-                            <p>Face Productions</p>
-                        </section>
-
-                        <section className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center sm:text-left">
-                            <p className="font-medium">School of Rock</p>
-                            <p>Dewey Finn</p>
+                            <p>Lead</p>
                             <p>Face Productions</p>
                         </section>
                     </div>
