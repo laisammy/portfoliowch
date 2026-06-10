@@ -26,7 +26,7 @@ export default function Contact() {
                         </a>
                     </div>
 
-                    <div className="flex flex-row justify-center items-center w-full">
+                    {/* <div className="flex flex-row justify-center items-center w-full">
                         <form className="w-full max-w-lg">
 
                             <div className="flex flex-col">
@@ -81,7 +81,7 @@ export default function Contact() {
                             </div>
 
                         </form>
-                    </div>
+                    </div> */}
 
                     <div id="Navigation" className="mt-7 flex flex-wrap gap-3 text-[clamp(0.9rem,1.4vw,1.2rem)]">
                         <Link to="/" className="outline-1 outline-text/75 p-2 tracking-widest hover:bg-hover">
